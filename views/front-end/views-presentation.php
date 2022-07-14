@@ -10,7 +10,6 @@ require ('views/require/views-header.php');
 
         <img src="assets/img/registre-des-cancers-chu-limoges.jpg" alt="Image carte france, ville Limoges.">
 
-    
             <h2>Qui sommes-nous ?</h2> 
 
             <p>Lorem ipsum dolor sit amet. Eos neque libero et quas nulla est perferendis impedit et sequi vero ut saepe pariatur est aliquam quos. Qui nemo iure ut corrupti delectus 33 dignissimos reprehenderit.</p>

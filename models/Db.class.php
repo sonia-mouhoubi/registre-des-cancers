@@ -1,6 +1,7 @@
 <?php
 
 abstract class Db {
+    
     protected $db;
 
     public function __construct() {
@@ -19,5 +20,6 @@ abstract class Db {
         // $this->db = null;
     }  
 }
+
 ?>
 

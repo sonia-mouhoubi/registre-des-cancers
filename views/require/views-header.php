@@ -1,5 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html>
+<html  lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,5 +48,7 @@
                         <a href="contact">Contact</a>
                     </li>
                 </ul>
-            </nav>     
+            </nav>  
         </header>
+
+        

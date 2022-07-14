@@ -4,25 +4,22 @@
             <a href="admin-profil">Profil</a>
         </li>
         <li>
-            <a href="admin-formulaire">Formulaire chiffres des cancers</a>
+            <a href="admin-formulaire-chiffres-cancers">Formulaire chiffres des cancers</a>
         </li>
         <li>
             <a href="admin-chiffres-cancers">Chiffres des cancers</a>
         </li>
         <li>
-            <a href="admin-formulaire">Formulaire Activité de recherche</a>
+            <a href="admin-formulaire-activites-recherches">Formulaire Activité de recherche</a>
         </li>
         <li>
-            <a href="admin-activite">Activité de recherche</a>
+            <a href="admin-activites-recherches">Activité de recherche</a>
         </li>
         <li>
-            <a href="admin-formulaire">Formulaire Actualités</a>
+            <a href="admin-formulaire-actualites">Formulaire Actualités</a>
         </li>
         <li>
-            <a href="admin-activite">Activités</a>
-        </li>
-        <li>
-            <a href="admin-message-contact">Messages contact</a>
+            <a href="admin-actualites">Actualités</a>
         </li>
     </ul>
 </nav> 

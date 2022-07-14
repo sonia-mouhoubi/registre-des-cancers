@@ -5,13 +5,17 @@ require ('views/require/views-header.php');
 ?>          
 
 <main>
-    <section>
+    <section class="cancer-figures">
         <h1>Chiffres des cancers de Haute-Viennes</h1>
 
         <div>
-            <h2>En 2018, le nombre total de nouveaux cas de cancer est estimé à 382 000 dont 54 % chez l’homme.</h2> 
+        Le cancer est la première cause de mortalité prématurée en France, devant les maladies cardiovasculaires. En 2018, on estime que plus 382 000 nouveaux cas de cancer ont été diagnostiqués en France. On estime que 3,8 millions de personnes vivent en France aujourd'hui avec un diagnostic de cancer. Dans le monde, le cancer constitue la deuxième cause de décès avec près de 10 millions de morts par an.
+        </div>
 
-            <p>Lorem ipsum dolor sit amet. Vel harum ipsum non nostrum nesciunt ut consequatur eligendi ea illo minus et magni itaque aut dolorem mollitia. Eos perspiciatis accusantium ut molestias ullam ut corrupti voluptatibus.</p>
+        <div>
+            <h2>Nouveaux cancers en 2018</h2> 
+
+            <p><span>En 2018, le nombre total de nouveaux cas de cancer est estimé à 382 000 dont 54 % chez l’homme.</span> ipsum dolor sit amet. Vel harum ipsum non nostrum nesciunt ut consequatur eligendi ea illo minus et magni itaque aut dolorem mollitia. Eos perspiciatis accusantium ut molestias ullam ut corrupti voluptatibus.</p>
 
             <a href="">Lien vers un autre site</a>
         </div>
