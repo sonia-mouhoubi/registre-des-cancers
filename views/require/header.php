@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html  lang="fr">
     <head>
@@ -47,6 +46,12 @@
                     <li>
                         <a href="contact">Contact</a>
                     </li>
+                <?php if(isset($_SESSION['admin'])): ?>
+                    <form action="treatments/treatments-back/treatment-form-admin-logout.php" method="post">
+                        <input type="submit" id="logout" name="logout" value="Déconnexion">
+                    </form> 
+                <?php endif; ?>
+
                 </ul>
             </nav>  
         </header>

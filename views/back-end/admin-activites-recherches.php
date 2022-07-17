@@ -1,11 +1,10 @@
 <?php 
 $title = 'Page d\'activité de recherche - administration - Registre des cancers de Limoge'; 
 
-require ('views/require/header.php'); 
-?>  
+require_once ('views/require/header.php'); ?>  
 
         <main>
-            <?php require ('views/require/views-nav-admin.php'); ?>         
+            <?php require ('views/require/nav-admin.php'); ?>         
 
             <h1>Activité de recherche</h1>
 
@@ -82,4 +81,4 @@ require ('views/require/header.php');
             </section>
         </main>
 
-        <?php require ('views/require/footer.php'); ?>         
+        <?php require_once ('views/require/footer.php'); ?>         

@@ -1,5 +1,5 @@
 <?php 
-require_once('../../models/User.class.php');
+require_once('../../models/Admin.class.php');
 require_once('../../models/Security.class.php');
 require_once('../../models/Utility.class.php');
 session_start();
@@ -8,24 +8,24 @@ if(isset($_POST['connection']))
 {
     if(isset($_POST['email']) && isset($_POST['password']))
     {
-        $security = new Security; 
-        $utility = new Utility; 
+        $security = new Security; // Permet de nettoyer le POST
+        $utility = new Utility; // Permet de verifier le format attendu
 
-        $email = $security->validData($utility->strtolower($_POST['email'])); // Permet de nettoyer le POST
-        $password = $security->validData($_POST['password']); // Permet de verifier le format attendu
+        $email = $security->validData($utility->strtolower($_POST['email'])); 
+        $password = $security->validData($_POST['password']); 
 
         if(!empty($email) && !empty($password)) 
         {
             if(filter_var($email, FILTER_VALIDATE_EMAIL)) 
             {
-                $connectionUser = new User;
-                $res = $connectionUser->getUser($email);
+                $connectionAdmin = new Admin;
+                $res = $connectionAdmin->getAdminByEmail($email);
 
                 if(!empty($res) && password_verify($password, $res['password']))
                 {
-                    $_SESSION['user']['id'] = $res['id_user']; 
-                    $_SESSION['user']['mail'] = $res['email'];
-                    $_SESSION['user']['firstName'] = $res['firstname'];
+                    $_SESSION['admin']['id'] = $res['id_admin']; 
+                    $_SESSION['admin']['email'] = $res['email'];
+                    $_SESSION['admin']['firstName'] = $res['firstname'];
                     
                     $_SESSION['message'] = 'Connexion réussie.';
                     header("Location: ../../admin-profil"); 

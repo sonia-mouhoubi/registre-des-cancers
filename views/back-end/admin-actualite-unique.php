@@ -1,8 +1,7 @@
 <?php 
 $title = 'Page de l\'article n°6 - administration - Registre des cancers de Limoge'; 
 
-require ('views/require/header.php'); 
-?>      
+require_once ('views/require/header.php'); ?>      
 
 <main>
     <section>
@@ -24,4 +23,4 @@ require ('views/require/header.php');
     </section>
 </main>
 
-<?php require ('views/require/footer.php'); ?>         
+<?php require_once ('views/require/footer.php'); ?>         

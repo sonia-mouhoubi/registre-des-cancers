@@ -9,11 +9,11 @@ class Article extends Db {
     private $surname;
 
     
-    public function getUser()
+    public function getAdminByEmail()
     {
         // $this->email = $email;
 
-        $query = $this->db->prepare('SELECT * FROM user');
+        $query = $this->db->prepare('SELECT * FROM admin');
         $query->execute();
 
         $resEmail = $query->fetchAll(PDO::FETCH_ASSOC);

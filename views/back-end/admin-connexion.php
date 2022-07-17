@@ -1,8 +1,8 @@
 <?php 
-require ('treatments/treatments-front/treatment-errors.php'); 
+session_start();
+require ('treatments/treatments-back/treatment-errors.php'); 
 $title = 'Page de connexion - Registre des cancers de Limoge'; 
-require ('views/require/header.php'); 
-?>  
+require_once ('views/require/header.php'); ?>  
 
 <main>
     <section>
@@ -10,7 +10,7 @@ require ('views/require/header.php');
 
         <img src="" alt="Image connexion, registre des cancers">
 
-        <form id="form-connexion-admin" class="form" action="treatments/treatments-back/treatment-admin-connection.php" method="post">
+        <form id="form-connexion-admin" class="form" action="treatments/treatments-back/treatment-form-admin-connection.php" method="post">
 
             <label for="email">Adresse Mail <span>*</span></label>
             <input type="text" id="email" name="email">
@@ -28,4 +28,4 @@ require ('views/require/header.php');
     </section>
 </main>
 
-<?php require ('views/require/footer.php'); ?>         
+<?php require_once ('views/require/footer.php'); ?>         

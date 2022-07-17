@@ -1,11 +1,10 @@
 <?php 
 $title = 'Page d\'actualité - administration - Registre des cancers de Limoge'; 
 
-require ('views/require/header.php'); 
-?>       
+require_once ('views/require/header.php'); ?>       
 
 <main>
-    <?php require ('views/require/views-nav-admin.php'); ?>         
+    <?php require ('views/require/nav-admin.php'); ?>         
 
     <section class="actuality">
         <h1>Actualités</h1>
@@ -72,4 +71,4 @@ require ('views/require/header.php');
     </section>
 </main>
 
-<?php require ('views/require/footer.php'); ?>         
+<?php require_once ('views/require/footer.php'); ?>         
