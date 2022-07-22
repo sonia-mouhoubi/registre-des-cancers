@@ -7,7 +7,7 @@ require_once ('views/require/header.php'); ?>
     <section>
         <h1>Page non trouvées</h1>
 
-        <img src="" alt="Erreur 404">
+        <img src="assets/img/error404.jpg" alt="Erreur 404">
     </section>
 </main>
 

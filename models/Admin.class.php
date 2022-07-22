@@ -31,17 +31,8 @@ class Admin extends Db {
         return $res;
     }
 
+    
 // UPDATE
-    // public function updateAdmin($firstname, $surname, $email,  $id) { 
-    //     $this->firstname = $firstname;
-    //     $this->surname = $surname; 
-    //     $this->email = $email;  
-    //     $this->id = $id;
-
-    //     $req = $this->db->prepare("UPDATE admin SET surname=?, firstname=?, email=? WHERE id_admin = ?");
-    //     $req->execute([$firstname, $surname, $email, $id]);
-    // }
-
     public function updateSurnameAdmin($surname, $id) { 
         $this->surname = $surname; 
         $this->id = $id;

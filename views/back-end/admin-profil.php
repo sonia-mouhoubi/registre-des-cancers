@@ -1,19 +1,19 @@
 <?php 
-require ('treatments/treatments-back/treatment-admin-profile.php'); 
-require ('treatments/treatments-back/treatment-errors.php'); 
+require_once ('treatments/treatments-back/treatment-admin-profile.php'); 
+require_once ('treatments/treatments-back/treatment-errors.php'); 
 $title = 'Page mon profil - Registre des cancers de Limoge'; 
 
 require_once ('views/require/header.php'); 
 ?>       
 
-<main>
-    <?php require ('views/require/nav-admin.php'); ?>              
+<main class="main">
+    <?php require_once ('views/require/nav-admin.php'); ?>              
     
-    <section>
+    <section class="profil">
         <h1>Mon tableau de bord</h1>
         <h2>Informations du compte</h2>
 
-        <form class="form" action="treatments/treatments-back/treatment-form-admin-profile.php" method="post">
+        <form class="form" action="treatments/treatments-back/treatment-form-admin-infos-profile.php" method="post">
 
             <label for="surname">Nom</label>
             <input type="text" id="surname" name="surname" value="<?= $infosAdmin['surname']?>">
@@ -31,18 +31,21 @@ require_once ('views/require/header.php');
 
         </form>
 
-        <form class="form" action="treatments/treatments-back/treatment-form-admin-profile.php" method="post">
+        <form class="form" action="treatments/treatments-back/treatment-form-admin-password-profile.php" method="post">
 
-            <label for="passwordOld">Ancien mot de passe</label>
-            <input type="password" id="passwordOld" name="passwordOld" placeholder="Ancien mot de passe">
+            <label for="OldPassword">Ancien mot de passe</label>
+            <input type="text" id="OldPassword" name="OldPassword" placeholder="Ancien mot de passe">
 
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" placeholder="Nouveau mot de passe">
+            <label for="newPassword">Mot de passe</label>
+            <input type="text" id="newPassword" name="newPassword" placeholder="Nouveau mot de passe">
 
-            <label for="passwordConfirm">Confirmation du Mot de passe</label>
-            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirmation du mot de passe">
+            <label for="ConfirmPassword">Confirmation du Mot de passe</label>
+            <input type="text" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirmation du mot de passe">
 
-            <input type="submit" id="updatePassword" name="updatePassword" value="Valider">
+            <!-- Message d'erreur -->
+            <?php messagesPasswordProfil();?>
+
+            <input type="submit" id="updatePassword" name="updatePasswordProfil" value="Valider">
             
         </form>
     </section>

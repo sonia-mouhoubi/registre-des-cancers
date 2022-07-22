@@ -22,6 +22,16 @@ class Utility {
 
         return $data;
     }
+
+     // Première lettre en majuscule
+     public function ucfirst($data) 
+     {
+         $this->data = $data;
+ 
+         $data = ucfirst($data);
+ 
+         return $data;
+     }
 }
 
 ?>

@@ -7,7 +7,7 @@ require_once ('views/require/header.php'); ?>
     <section>
         <h1>Contact</h1>
 
-        <img src="assets/img/contact-registre-des-cancers.jpg" alt="Page contact, Registre des cancers">
+        <!--<img src="assets/img/contact-registre-des-cancers.jpg" alt="Page contact, Registre des cancers">-->
 
         <form class="form" action="" method="post">
 

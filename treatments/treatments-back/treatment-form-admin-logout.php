@@ -1,5 +1,5 @@
 <?php 
-require_once('../../models/User.class.php');
+require_once('../../models/Admin.class.php');
 require_once('../../models/Security.class.php');
 require_once('../../models/Utility.class.php');
 session_start();

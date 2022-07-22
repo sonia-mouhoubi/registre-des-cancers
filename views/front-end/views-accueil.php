@@ -5,18 +5,14 @@ require_once ('views/require/header.php'); ?>
 
 <main>
     <section class="presentation-accueil">
-        <h1>Bienvenue sur le  registre des cancers de Limoges.</h1>
+        <h1>Bienvenue sur le site du registre des cancers.</h1>
 
         <div>
             <h2>Présentation</h2>
 
-            <h3>Qu'est ce qu'un registre : </h3>
+            <h3>Qu'est ce qu'un registre ? </h3>
 
-            <p>Lorem ipsum dolor sit amet. In Quis nisi ea alias consectetur ut inventore ipsam sit sint vitae eum illum soluta est asperiores optio. </p>
-
-            <h3>Objectif : </h3>
-
-            <p>Est sapiente quis qui doloribus voluptates et sequi libero aut dignissimos veritatis. Lorem ipsum dolor sit amet. In Quis nisi ea alias consectetur ut inventore ipsam sit sint vitae eum illum soluta est asperiores optio. </p>
+            <p>Un registre est une structure qui met en œuvre un recueil continu et exhaustif de données nominatives, intéressant un ou plusieurs évènements de santé dans une population géographiquement définie, à des fins de surveillance épidémiologique et de recherche.</p>
 
             <span><a href="presentation">En savoir +</a></span>
         </div>
@@ -24,7 +20,6 @@ require_once ('views/require/header.php'); ?>
         <img src="assets/img/french-map-limoges.png" alt="Image carte france, ville Limoges.">
     </section>
 
-<div class="container-home">
     <section class="actualities">
         <h2>Actualités</h2>
 
@@ -51,34 +46,20 @@ require_once ('views/require/header.php'); ?>
 
             <span><a href="">Toute l’actualité +</a></span>
         </div>
-    </section>
-
-    <section class="cancers">
-        <h2>Cancers</h2>
 
         <div>
-            <img src="assets/img/logo-cancer.png" alt="Image logo du cancer.">
+            <h3>Titre de l'actualité n°3</h3>
 
-            <h3>Définition du Cancer</h3>
+            <img src="assets/img/actualite2.jpg" alt="Image article 2.">
 
-            <p>Est suscipit veniam id sequi  
-            Est suscipit veniam id sequi  et dicta deserunt et voluptatem voluptatum aut odio quae sed amet dolorum et vitae rerum! Et vero enim id galisum veniam est omnis provident. Id dolorem minus et voluptatum galisum in galisum autem hic quidem nihil ut blanditiis doloremque At ipsum dolore.</p>
+            <span>20/01/2022</span>
 
-            <p>Est suscipit veniam id sequi  
-            Est suscipit veniam id sequi  et dicta deserunt et voluptatem voluptatum aut odio quae sed amet dolorum et vitae rerum! Et vero enim id galisum veniam est omnis provident. Id dolorem minus et voluptatum galisum in galisum autem hic quidem nihil ut blanditiis doloremque At ipsum dolore.</p>
+            <p>Lorem ipsum dolor sit amet. In Quis nisi ea alias consectetur ut inventore ipsam sit sint vitae eum illum soluta est asperiores optio.</p>
 
             <span><a href="">Toute l’actualité +</a></span>
         </div>
-
-        <div>
-            <h3>Données sur les cancers</h3>
-
-            <p>Les chiffres clés du cancer</p>
-
-            <img src="assets/img/tableau-donnees-registre-des-cancers.jpg" alt="Image tableau des données des cancers.">
-        </div>
     </section>
-</div>
+
     <section class="partners">
         <h2>Nos Partenaires</h2>
 

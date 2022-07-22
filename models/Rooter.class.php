@@ -8,9 +8,7 @@ class Rooter {
         // Pages front
     
         $dirFront = 'views/front-end/'; // Chemin où se trouve le dossier.
-    
         $arrayFilesFront = scandir($dirFront); // Permet de lire le dossier sous forme de tableau.
-    
         $newArrayFront = []; // Array qui va contenir les noms de fichiers modifiés.
     
         foreach($arrayFilesFront as $key=> $value) {
@@ -23,9 +21,7 @@ class Rooter {
         // Pages back
 
         $dirBack = 'views/back-end/'; // Chemin où se trouve le dossier.
-    
         $arrayFilesBack = scandir($dirBack); // Permet de lire le dossier sous forme de tableau.
-    
         $newArrayBack = []; // Array qui va contenir les noms de fichiers modifiés.
     
         foreach($arrayFilesBack as $key=> $value) {
@@ -35,19 +31,15 @@ class Rooter {
             }
         }
 
-        
         if(in_array($nameFile, $newArrayFront)) {
-    
-            require("views/front-end/views-$nameFile.php");
+            require_once("views/front-end/views-$nameFile.php");
         } 
         elseif(in_array($nameFile, $newArrayBack)) {
-    
-            require("views/back-end/$nameFile.php");
+            require_once("views/back-end/$nameFile.php"); 
         }
         else {
-    
-            require("views/front-end/views-error404.php");
-        }
+            require_once("views/front-end/views-error404.php");
+        }   
     }
 }
 

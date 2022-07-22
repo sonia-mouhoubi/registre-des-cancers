@@ -1,14 +1,14 @@
 <?php 
 session_start();
-require ('treatments/treatments-back/treatment-errors.php'); 
+require_once ('treatments/treatments-back/treatment-errors.php'); 
 $title = 'Page de connexion - Registre des cancers de Limoge'; 
 require_once ('views/require/header.php'); ?>  
 
-<main>
+<main class="main">
     <section>
         <h1>Connexion à l'administration du site.</h1>
 
-        <img src="" alt="Image connexion, registre des cancers">
+       <!-- <img src="" alt="Image connexion, registre des cancers"> -->
 
         <form id="form-connexion-admin" class="form" action="treatments/treatments-back/treatment-form-admin-connection.php" method="post">
 

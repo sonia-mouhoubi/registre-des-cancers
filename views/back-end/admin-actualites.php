@@ -1,74 +1,29 @@
 <?php 
+require_once ('treatments/treatments-back/treatment-admin-actualities.php'); 
 $title = 'Page d\'actualité - administration - Registre des cancers de Limoge'; 
 
 require_once ('views/require/header.php'); ?>       
 
-<main>
-    <?php require ('views/require/nav-admin.php'); ?>         
+<main class="main">
+    <?php require_once ('views/require/nav-admin.php'); ?>         
 
     <section class="actuality">
         <h1>Actualités</h1>
 
+    <?php //var_dump($allActualities);
+        foreach ($allActualities as $value): ?>
         <div>
-            <h2>Titre Article n°6</h2> 
+            <h2><?= $security->validData($utility->ucfirst($value['title']));?></h2> 
 
-            <span>01 janvier 2022</span>
+            <span><?= $security->validData($utility->ucfirst($value['date_article']));?></span>
 
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
+            <p><?= $security->validData($utility->ucfirst($value['description']));?></p>
 
-            <a href="">En savoir +</a>
+            <a href="./admin-actualite/<?= $value['id_article'] ?>">En savoir plus</a></br>
         </div>
+        <?php endforeach ?>
 
-        <div>
-            <h2>Titre Article n°5</h2> 
-
-            <span>01 janvier 2022</span>
-
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
-
-            <a href="">En savoir +</a>
-        </div>
-
-        <div>
-            <h2>Titre Article n°4</h2> 
-
-            <span>01 janvier 2022</span>
-
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
-
-            <a href="">En savoir +</a>
-        </div>
-
-        <div>
-            <h2>Titre Article n°3</h2> 
-
-            <span>01 janvier 2022</span>
-
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
-
-            <a href="">En savoir +</a>
-        </div>
-
-        <div>
-            <h2>Titre Article n°2</h2> 
-
-            <span>01 janvier 2022</span>
-
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
-
-            <a href="">En savoir +</a>
-        </div>
-
-        <div>
-            <h2>Titre Article n°1</h2> 
-
-            <span>01 janvier 2022</span>
-
-            <p>Lorem ipsum dolor sit amet. Vel inventore dolore in doloremque quia aut error porro eum repellendus natus.</p>
-
-            <a href="">En savoir +</a>
-        </div>
-    </section>
+    </section>  
 </main>
 
 <?php require_once ('views/require/footer.php'); ?>         
